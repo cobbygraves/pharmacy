@@ -72,9 +72,7 @@ const useStyles = makeStyles((theme) => ({
 const Admin = (props) => {
   const classes = useStyles();
   // const { drugsArray, setDrugsArray, showDrugs } = useShowDrugs();
-  const [drugsArray, setDrugsArray] = useDataFetching(
-    "http://localhost:5000/drug"
-  );
+  const [drugsArray, setDrugsArray] = useDataFetching(`${HOSTURL}/drug`);
 
   const [newStock, setNewStock] = useState(true);
   const [lookFor, setLookFor] = useState("");
