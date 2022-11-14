@@ -108,9 +108,7 @@ const StyledTableCell = withStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
 
-  const [drugsArray, setDrugsArray] = useFetchData(
-    "http://localhost:5000/drug"
-  );
+  const [drugsArray, setDrugsArray] = useFetchData(`${HOSTURL}/drug`);
 
   const dispatch = useDispatch();
   const { showModal } = bindActionCreators(actionCreators, dispatch);
