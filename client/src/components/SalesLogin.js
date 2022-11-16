@@ -68,7 +68,7 @@ const LoginUser = (props) => {
         {props.showSpinner && <Spinner />}
         <TextField
           className={classes.inputStyle}
-          placeholder="username"
+          placeholder="enter 'rudia' as the username"
           variant="filled"
           ref={loginRef}
           type="text"
@@ -77,7 +77,7 @@ const LoginUser = (props) => {
         />
 
         <TextField
-          placeholder="password"
+          placeholder="enter 'chemicals' as the password"
           variant="filled"
           type="password"
           className={classes.inputStyle}
